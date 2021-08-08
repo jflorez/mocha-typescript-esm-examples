@@ -1,10 +1,12 @@
 import {expect} from 'chai'
 
-const d = await Promise.resolve('hello')
+const data = await Promise.resolve(['hello', 'world'])
 
 describe('example', () => {
-    it('test', async () => {
-        expect(d).to.equal('hellos')
+    data.forEach(entry => {
+        it(`testing dynamic entry "${entry}"`, () => {
+            expect(entry).to.equal('hello')
+        })
     })
 })
 

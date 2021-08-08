@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "test": "node --experimental-specifier-resolution=node --loader ts-node/esm ./node_modules/mocha/lib/cli/cli"
+    "test": "node --experimental-specifier-resolution=node --loader ts-node/esm ./node_modules/mocha/lib/cli/cli **/*.spec.ts"
   },
   "devDependencies": {
     "@types/chai": "^4.2.21",
